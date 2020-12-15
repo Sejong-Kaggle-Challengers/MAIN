@@ -1,4 +1,4 @@
-# Sejong University 
+# Sejong Kaggle Challengers
 세종대 캐글러 모임 메인 레포
 
 ## 1회차: 병원 개/폐업 분류예측경진대회
