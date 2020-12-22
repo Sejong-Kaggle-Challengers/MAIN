@@ -14,4 +14,4 @@
 | 정인희 ||
 | 홍주영 ||
 | 조준혁 ||
-| 황창현 ||
+| 황창현 |https://github.com/Sejong-Kaggle-Challengers/98hyun/tree/master/%5B1%EC%A3%BC%EC%B0%A8%5D|
