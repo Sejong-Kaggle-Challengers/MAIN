@@ -8,7 +8,7 @@
 | -------- | -------- |
 | 조윤식 ||
 | 엄민지 ||
-| 이정민 |병원_개폐업_연습_1.ipynb|
+| 이정민 |https://github.com/Sejong-Kaggle-Challengers/jeongmin/blob/main/%EB%B3%91%EC%9B%90_%EA%B0%9C%ED%8F%90%EC%97%85_%EC%97%B0%EC%8A%B5_1.ipynb|
 | 백지오 ||
 | 김은선 ||
 | 정인희 ||
