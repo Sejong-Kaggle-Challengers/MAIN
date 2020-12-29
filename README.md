@@ -11,7 +11,7 @@
 | 이정민 |https://github.com/Sejong-Kaggle-Challengers/jeongmin/blob/main/%EB%B3%91%EC%9B%90_%EA%B0%9C%ED%8F%90%EC%97%85_%EC%97%B0%EC%8A%B5_1.ipynb|
 | 백지오 ||
 | 김은선 ||
-| 정인희 ||
+| 정인희 |https://github.com/Sejong-Kaggle-Challengers/JeongInhee/blob/main/1%EC%A3%BC%EC%B0%A8/%EB%B3%91%EC%9B%90%EA%B0%9C%ED%8F%90%EC%97%85_%EB%8D%B0%EC%9D%B4%EC%BD%98_%EC%BA%90%EA%B8%80%EC%8A%A4%ED%84%B0%EB%94%94.ipynb|
 | 홍주영 ||
 | 조준혁 ||
 | 황창현 |https://github.com/Sejong-Kaggle-Challengers/98hyun/tree/master/%5B1%EC%A3%BC%EC%B0%A8%5D|
