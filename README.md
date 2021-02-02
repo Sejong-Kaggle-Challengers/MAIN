@@ -46,7 +46,7 @@
 | 이정민 |[Repository](https://github.com/Sejong-Kaggle-Challengers/jeongmin)|
 | 정인희 |[Repository](https://github.com/Sejong-Kaggle-Challengers/JeongInhee)|
 | 홍주영 |[Repository](https://github.com/Sejong-Kaggle-Challengers/juyoung)|
-| 정지원 |[Repository](https://github.com/Sejong-Kaggle-Challengers/98hyun)|
+| 정지원 |[Repository](https://github.com/Sejong-Kaggle-Challengers/jiwonnnnn)|
 | 김수현 |[Repository](https://github.com/Sejong-Kaggle-Challengers/98hyun)|
-| 이민영 |[Repository](https://github.com/Sejong-Kaggle-Challengers/98hyun)|
-| 이현동 |[Repository](https://github.com/Sejong-Kaggle-Challengers/98hyun)|
+| 이민영 |[Repository](https://github.com/Sejong-Kaggle-Challengers/Mainyoung)|
+| 이현동 |[Repository](https://github.com/Sejong-Kaggle-Challengers/Hyundong)|
