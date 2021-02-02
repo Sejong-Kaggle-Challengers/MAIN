@@ -41,7 +41,7 @@
 ## 📌 팀원 개인 Repository
 
 | 팀원 | Repository |
-| -------- | -------- |
+| :--------: | :--------: |
 | 황창현 (리더) |[Repository](https://github.com/Sejong-Kaggle-Challengers/98hyun)|
 | 이정민 |[Repository](https://github.com/Sejong-Kaggle-Challengers/jeongmin)|
 | 정인희 |[Repository](https://github.com/Sejong-Kaggle-Challengers/JeongInhee)|
