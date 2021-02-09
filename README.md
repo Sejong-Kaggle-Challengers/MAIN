@@ -14,8 +14,8 @@
 | [4] |2021.01.22.| [신용카드 거래 데이터 시각화](https://dacon.io/competitions/official/42473/overview/) | 대회 수상자 코드 분석 |
 | [5] |2021.01.26.| [KCB 금융스타일 시각화](https://dacon.io/competitions/official/82407/overview/) | 대회 수상자 코드 분석 |
 | [6] |2021.01.29. <br> 2021.02.02.| [퇴근시간 버스승차인원 예측](https://dacon.io/competitions/official/229255/overview/)  | ① 직접 구현 <br> ② 대회 수상자 코드 분석 |
-| [7] |2021.02.05.| [반도체 박막 두께 분석 경진대회](https://dacon.io/competitions/official/235554/overview/) | 대회 수상자 코드 분석 |
-
+| [7] |2021.02.05. <br> 2021.02.09.| [반도체 박막 두께 분석](https://dacon.io/competitions/official/235554/overview/) | 대회 수상자 코드 분석 |
+| [8] |2021.02.16.| [원자력발전소 상태 판단](https://dacon.io/competitions/official/235551/overview/) | 토론 및 코드공유 분석 |
 
 ## 📌 진행 방식 
 
