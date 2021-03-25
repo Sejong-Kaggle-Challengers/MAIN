@@ -15,7 +15,15 @@
 | [5] |2021.01.26.| [KCB 금융스타일 시각화](https://dacon.io/competitions/official/82407/overview/) | 대회 수상자 코드 분석 |
 | [6] |2021.01.29. <br> 2021.02.02.| [퇴근시간 버스승차인원 예측](https://dacon.io/competitions/official/229255/overview/)  | ① 직접 구현 <br> ② 대회 수상자 코드 분석 |
 | [7] |2021.02.05. <br> 2021.02.09.| [반도체 박막 두께 분석](https://dacon.io/competitions/official/235554/overview/) | 대회 수상자 코드 분석 |
-| [8] |2021.02.16.| [원자력발전소 상태 판단](https://dacon.io/competitions/official/235551/overview/) | 토론 및 코드공유 분석 |
+| [8] |2021.02.12. <br> 2021.02.16.| [반도체 박막 두께 분석](https://dacon.io/competitions/official/235554/overview/) | 대회 수상자 코드 분석 |
+| [9] |2021.02.16. <br> 2021.02.23.| [컴퓨터 비전 학습 경진대회](https://dacon.io/competitions/official/235626/overview/) | 토론 및 코드공유 분석 |
+| [10] |2021.02.23. <br> 2021.02.26.| [I’m Something of a Painter Myself](https://www.kaggle.com/c/gan-getting-started) | 구현 제외 개념 공부 |
+| [11] |2021.02.26. <br> 2021.03.02.| [소설 작가 분류 AI 경진대회](https://dacon.io/competitions/official/235670/overview/) | 토론 및 코드공유 분석 |
+| [12] |2021.03.02. <br> 2021.03.09.| [Natural Language Processing with Disaster Tweets](https://www.kaggle.com/c/nlp-getting-started/overview) | nlp 공부했던 것 해보기. |
+| [13] |2021.03.09. <br> 2021.03.16.| [Tabular Playground Series - Mar 2021](https://www.kaggle.com/c/tabular-playground-series-mar-2021) | 토론 및 코드공유 분석 |
+| [14] |2021.03.16. <br> 2021.03.23.| [Sejong AI Challenge 문제2](https://www.kaggle.com/c/sejong-ai-challenge-p2) | 지금까지 공부한 것으로 풀어보기 |
+| [15] |2021.03.23. <br> ~ 진행중.| [Sejong AI Challenge 문제1](https://www.kaggle.com/c/sejong-ai-challenge-p1) | 팀으로 해서 공부한 것 실험해보기 |
+
 
 ## 📌 진행 방식 
 
@@ -47,6 +55,5 @@
 | 정인희 |[Repository](https://github.com/Sejong-Kaggle-Challengers/JeongInhee)|
 | 홍주영 |[Repository](https://github.com/Sejong-Kaggle-Challengers/juyoung)|
 | 정지원 |[Repository](https://github.com/Sejong-Kaggle-Challengers/jiwonnnnn)|
-| 김수현 |[Repository](https://github.com/Sejong-Kaggle-Challengers/98hyun)|
 | 이민영 |[Repository](https://github.com/Sejong-Kaggle-Challengers/Mainyoung)|
 | 이현동 |[Repository](https://github.com/Sejong-Kaggle-Challengers/Hyundong)|
