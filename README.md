@@ -58,3 +58,8 @@
 | 정지원 |[Repository](https://github.com/Sejong-Kaggle-Challengers/jiwonnnnn)|
 | 이민영 |[Repository](https://github.com/Sejong-Kaggle-Challengers/Mainyoung)|
 | 이현동 |[Repository](https://github.com/Sejong-Kaggle-Challengers/Hyundong)|
+| 조영래 |[Repository](https://github.com/Sejong-Kaggle-Challengers-2nd/Cho-D-YoungRae)|
+| 송성곤 |[Repository](https://github.com/Sejong-Kaggle-Challengers-2nd/Sunggon_Song)|
+| 윤상준 |[Repository](https://github.com/Sejong-Kaggle-Challengers-2nd/Yoon_SangJun)|
+| 이채원 |[Repository](https://github.com/Sejong-Kaggle-Challengers-2nd/chaewon)|
+| 최영민 |[Repository](https://github.com/Sejong-Kaggle-Challengers-2nd/Choi_YoungMin)|
