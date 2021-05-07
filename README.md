@@ -22,7 +22,7 @@
 | [12] |2021.03.02. <br> 2021.03.09.| [Natural Language Processing with Disaster Tweets](https://www.kaggle.com/c/nlp-getting-started/overview) | nlp 공부했던 것 해보기. |
 | [13] |2021.03.09. <br> 2021.03.16.| [Tabular Playground Series - Mar 2021](https://www.kaggle.com/c/tabular-playground-series-mar-2021) | 토론 및 코드공유 분석 |
 | [14] |2021.03.16. <br> 2021.03.23.| [Sejong AI Challenge 문제2](https://www.kaggle.com/c/sejong-ai-challenge-p2) | 지금까지 공부한 것으로 풀어보기 |
-| [15] |2021.03.23. <br> ~ 진행중.| [Sejong AI Challenge 문제1](https://www.kaggle.com/c/sejong-ai-challenge-p1) | 팀으로 해서 공부한 것 실험해보기 |
+| [15] |2021.03.23. <br> ~ 2021.04.30.| [Sejong AI Challenge 문제1](https://www.kaggle.com/c/sejong-ai-challenge-p1) | 팀으로 해서 공부한 것 실험해보기 |
 | [16] |2021.04.30. <br> ~ 진행중.| [신용카드 사용자 연체 예측 AI 경진대회](https://dacon.io/competitions/official/235713/overview/description/) | 대회 도전 |
 
 
