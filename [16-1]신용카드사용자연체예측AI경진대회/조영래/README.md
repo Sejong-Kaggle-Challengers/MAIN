@@ -8,7 +8,7 @@
 - 성능 `0.8076415252` 로 저하되었다.
 
 
-## 참고할만한 공유 코드
+## 확인해본 공유코드
 
 ### EDA
 1. [입문자의 투박한 EDA](https://dacon.io/competitions/official/235713/codeshare/2494?page=1&dtype=vote)
