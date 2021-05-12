@@ -33,11 +33,47 @@
 
 
 ## Experiments
-1. experiment 1
+### 
+### 기준 baseline [Simple Baseline LGBM - LB 0.72728 - 최정명](https://dacon.io/competitions/official/235713/codeshare/2476?page=1&dtype=vote)
+> 내가 실행해보니 기준도 `0.8086858121`으로 더 낮았다. 그러면 experiment1이 괜찮은 걸까...
+1. experiment 1 - `0.8076415252`
+   - EDA 2, 3 을 확인해보면 중복된 데이터가 있는 것을 확인해볼 수 있었다. 이를 같은 사람으로 보지 않고, 같은 피처를 가진 개별 데이터로 보고 이 같은 피처들이 가진 타겟값의 평균을 파겟값으로 하여 중복 데이터는 삭제하였다.
+> 중복된 데이터를 다른 사람으로 본다면, 이렇게 한 개의 데이터로 합치는 것이 아니라 각각의 데이터로 그냥 학습해준다면 이 중복된 여러 데이터가 해당 값에 대해 스스로 가중치를 부여해준다고 볼 수 있을까?
 
-- EDA 2, 3 을 확인해보면 중복된 데이터가 있는 것을 확인해볼 수 있었다. 이를 같은 사람으로 보지 않고, 같은 피처를 가진 개별 데이터로 보고 이 같은 피처들이 가진 타겟값의 평균을 파겟값으로 하여 중복 데이터는 삭제하였다.
-- 이외 과정은 [Simple Baseline LGBM - LB 0.72728 - 최정명](https://dacon.io/competitions/official/235713/codeshare/2476?page=1&dtype=vote) 과 같다.
-- 성능 `0.8076415252` 로 저하되었다.
+### custom standard baseline - `0.7611898663220819`
+> 데이콘 일일 제출 가능 횟수가 3회여서 제출 없이 진행하기 위해 실험을 위한 기준이 되는 간단한 baseline
+- 결측치 'NAN' 으로 처리
+- `index` drop
+- onehot encoding categorical feature
+
+1. `0.7611898663220819`
+   - `FLAG_MOBIL` drop : train, test 모두에 한 가지 데이터 밖에 없음
+> 성능 변화 X -> 일단 drop해도 될듯
+2. `0.7611898663220819`
+- Binary Categorical Feature 처리
+  - `gender`, `car`, `reality`, `work_phone`, `phone`, `email`, `FLAG_MOBIL`(drop)
+    - 이 중 object type: `gender`, `car`, `reality`
+  - 기존의 baseline은 모두 onehotencoding 
+- 이외사항 1과 동일
+> fit_time 만 줄어들었을 뿐 성능에서는 영향을 미치지 않았다. -> 일단 이렇게 진행하도록
+3. `0.7629209081254806` - bad
+   - 결측치가 많은 `occyp_type` drop
+   - 이외 2와 동일
+
+4. `family_size`, `child_num` 에 대한 처리
+- outlier처리
+- drop
+- `family_size` - `child_num`
+- family_size, child_num > 6, 3 인 것 모두 6, 3에 포함. `family_size` - `child_num` 추가 >>> 0.7602247936797507
+
+```
+# Experiment 2-4
+- `edu_type`을 onehot encoding 이 아니라 ordinal로 처리해보자
+- 이외 2와 동일
+```
+  
+
+
 
 
 ## 확인해본 공유코드
