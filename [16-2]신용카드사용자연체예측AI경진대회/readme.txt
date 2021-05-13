@@ -11,12 +11,19 @@ family#begin : family와 begin_month 합쳐서 진행. 성능 더 낮아진다. 
 범주형은 get_dummy로 원핫인코딩
 정규화는 열에대해서만. batch아니다. 
 
+----20210513----
+occpy_type 돈벌은 사람과 안벌은 사람. 그 후 일하는 사람 안하는 사람 2가지 경우로 나눈다. 성능향상 있긴 있다.
+중복행 제일 오래된거 한개만 삭제. 성능 모르겠다. 
+
 2. 모델링
 
 홀드아웃 기법 test size 0.15 seed 고정.
 종속변수 불규칙하니 계층적으로 나누기.
 xgb 사용. multi:softprob로 epoch 많이 돌리고 early_stop으로 멈추기.
 metric은 logloss로
+
+----20210513----
+lgb,random forest,svc 이용. 예측값 멱평균.
 
 
 
