@@ -63,7 +63,7 @@
 4. `family_size`, `child_num` 처리
    - outlier처리
    - drop
-   - `family_size` - `child_num` feature 추가
+   - `family_size` - `child_num` feature 추가 -> 이후 해당 feature를 `parent`라 하겠음
    - PCA 를 통한 차원 축소 
 > `family_size`, `child_num` 에 대한 outlier 처리를 해준 후 `family_size` - `child_num` feature 를 포함해 총 3 feature를 차원축소 해준 것이 가장 성능이 좋았다. 아래 표에 값을 해당 피처의 최대값으로 지정하고 그 이상인 값은 이상치로 간주해 최대값으로 조정해주는 식으로 처리하였다. family_size가 child_num 보다 작은 경우가 있고 이 경우는 있기 어려운 경우라 생각해서 고려하지 않아도 될 것 같다. 
 
@@ -81,7 +81,11 @@
 |1|4|-0.7604711560721625|
 |5|3|-0.7605177956886361|
 
-
+5.  scaling - `0.7600575656819766`
+- `income_total`이 특정 값에 쏠려있어서 로그를 취해본다.
+- 정규화를 진행해본다.
+- 나머지 내용은 4와 같음
+> `income_total` 로그화 했을 때 성능 미미하게 향상. minmaxscaling 에 대해서는 다른 값에 대해서는 성능이 떨어지고 `income_total`에 대해서만 성능의 변동이 없었다. 나중에 어떻게 할지 결정해야될듯.
 
 
 
