@@ -33,7 +33,6 @@
 
 
 ## Experiments
-### 
 ### 기준 baseline [Simple Baseline LGBM - LB 0.72728 - 최정명](https://dacon.io/competitions/official/235713/codeshare/2476?page=1&dtype=vote)
 > 내가 실행해보니 기준도 `0.8086858121`으로 더 낮았다. 그러면 experiment1이 괜찮은 걸까...
 1. experiment 1 - `0.8076415252`
@@ -67,6 +66,7 @@
    - PCA 를 통한 차원 축소 
 > `family_size`, `child_num` 에 대한 outlier 처리를 해준 후 `family_size` - `child_num` feature 를 포함해 총 3 feature를 차원축소 해준 것이 가장 성능이 좋았다. 아래 표에 값을 해당 피처의 최대값으로 지정하고 그 이상인 값은 이상치로 간주해 최대값으로 조정해주는 식으로 처리하였다. family_size가 child_num 보다 작은 경우가 있고 이 경우는 있기 어려운 경우라 생각해서 고려하지 않아도 될 것 같다. 
 
+
 **성능이 좋았던 것으로 나타난 10개**
 |family_size|child_num|score|
 |---|---|---
@@ -87,7 +87,15 @@
 - 나머지 내용은 4와 같음
 > `income_total` 로그화 했을 때 성능 미미하게 향상. minmaxscaling 에 대해서는 다른 값에 대해서는 성능이 떨어지고 `income_total`에 대해서만 성능의 변동이 없었다. 나중에 어떻게 할지 결정해야될듯.
 
+### 추가로 진행해볼 것
+- 남은 outlier 처리
+  - `income_type`의 Student 7개 뿐
+- 의문의 Encoding 관련
 
+## 의문
+- 범주형 데이터(edutype 등)를 OnehotEncoding 이 아니라 특정 기준(교육수준)에 따라 OrdinalEncoding 하는 것이 성능이 좋아질까?
+  - 임의의 기준(교육수준)이 아니라 target값에 따라(신용 등급이 더 높은 것에 더 높은 수 부여) Encoding 하는 것이 좋지 않을까
+  - target값에 따라 기준을 구할 때 EDA 6 번 참조
 
 ## 확인해본 공유코드
 
@@ -110,9 +118,14 @@
 
 5. [데이터를 변환하고 이상치를 제거해보자 !!(함께하는우리)](https://dacon.io/competitions/official/235713/codeshare/2565?page=2&dtype=vote)
    - 상관관계 높은 데이터 drop (`child_num`, `family_size`)
+     - 두 피처에 대한 이상치
    - `occyp_type`
      - `credit` 비율이 train 전체와 `occyp_type` 이 NaN의 비율이 비슷
      - NaN이라고 `DAYS_EMPLOYED` 값이 0 인 것은 아님. 즉, 직업이 없는 상태 아님
+
+6. [EDA 과정 중 고민해 볼만한 부분들 공유드립니다 (4/12)](https://dacon.io/competitions/official/235713/codeshare/2514?page=2&dtype=recent)
+   - 고용 상태 별 신용 비율
+   - 기타 outlier
 
 ### pycaret
 1. [Pycaret logloss baseline (LB 0.75267) Jay 윤](https://dacon.io/competitions/official/235713/codeshare/2477?page=1&dtype=vote)
