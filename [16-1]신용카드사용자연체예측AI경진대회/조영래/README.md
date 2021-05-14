@@ -54,24 +54,33 @@
   - `gender`, `car`, `reality`, `work_phone`, `phone`, `email`, `FLAG_MOBIL`(drop)
     - 이 중 object type: `gender`, `car`, `reality`
   - 기존의 baseline은 모두 onehotencoding 
-- 이외사항 1과 동일
+  - 이외사항 1과 동일
 > fit_time 만 줄어들었을 뿐 성능에서는 영향을 미치지 않았다. -> 일단 이렇게 진행하도록
 3. `0.7629209081254806` - bad
    - 결측치가 많은 `occyp_type` drop
    - 이외 2와 동일
 
-4. `family_size`, `child_num` 에 대한 처리
-- outlier처리
-- drop
-- `family_size` - `child_num`
-- family_size, child_num > 6, 3 인 것 모두 6, 3에 포함. `family_size` - `child_num` 추가 >>> 0.7602247936797507
+4. `family_size`, `child_num` 처리
+   - outlier처리
+   - drop
+   - `family_size` - `child_num` feature 추가
+   - PCA 를 통한 차원 축소 
+> `family_size`, `child_num` 에 대한 outlier 처리를 해준 후 `family_size` - `child_num` feature 를 포함해 총 3 feature를 차원축소 해준 것이 가장 성능이 좋았다. 아래 표에 값을 해당 피처의 최대값으로 지정하고 그 이상인 값은 이상치로 간주해 최대값으로 조정해주는 식으로 처리하였다. family_size가 child_num 보다 작은 경우가 있고 이 경우는 있기 어려운 경우라 생각해서 고려하지 않아도 될 것 같다. 
 
-```
-# Experiment 2-4
-- `edu_type`을 onehot encoding 이 아니라 ordinal로 처리해보자
-- 이외 2와 동일
-```
-  
+**성능이 좋았던 것으로 나타난 10개**
+|family_size|child_num|score|
+|---|---|---
+|3|4|-0.7600580763343784|
+|4|4|-0.7600580763343784|
+|5|4|-0.7600580763343784|
+|6|4|-0.7600580763343784|
+|6|2|-0.7601985900920513|
+|4|1|-0.760361712706606|
+|4|2|-0.7604649642691491|
+|0|4|-0.7604711560721625|
+|1|4|-0.7604711560721625|
+|5|3|-0.7605177956886361|
+
 
 
 
