@@ -93,10 +93,16 @@
   - `0.7600575656819766` -> `0.7773064081582921`
 > 성능이 떨어졌다.. 왜...?
 
+7. `edu_type` 교육 수준별로 라벨링 - bad
+
+8. `edu_type` credit에 따라 순차적으로 라벨링 - bad
+
 ### 추가로 진행해볼 것
 - 남은 outlier 처리
   - `income_type`의 Student 7개 뿐
 - 의문의 Encoding 관련
+
+
 
 ## 의문
 - 범주형 데이터(edutype 등)를 OnehotEncoding 이 아니라 특정 기준(교육수준)에 따라 OrdinalEncoding 하는 것이 성능이 좋아질까?
