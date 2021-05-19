@@ -62,9 +62,10 @@
 4. `family_size`, `child_num` 처리
    - outlier처리
    - drop
-   - `family_size` - `child_num` feature 추가 -> 이후 해당 feature를 `parent`라 하겠음
+   - `family_size` - `child_num` feature 추가 -> 이후 실험에서는 해당 feature를 `parent`라 하겠음
    - PCA 를 통한 차원 축소 
-> `family_size`, `child_num` 에 대한 outlier 처리를 해준 후 `family_size` - `child_num` feature 를 포함해 총 3 feature를 차원축소 해준 것이 가장 성능이 좋았다. 아래 표에 값을 해당 피처의 최대값으로 지정하고 그 이상인 값은 이상치로 간주해 최대값으로 조정해주는 식으로 처리하였다. family_size가 child_num 보다 작은 경우가 있고 이 경우는 있기 어려운 경우라 생각해서 고려하지 않아도 될 것 같다. 
+   - `fc` outlier 제거
+> `family_size`, `child_num` 에 대한 outlier 처리를 해준 후 `family_size` - `child_num` feature 를 포함해 총 3 feature를 차원축소 해준 것이 가장 성능이 좋았다. 아래 표에 값을 해당 피처의 최대값으로 지정하고 그 이상인 값은 이상치로 간주해 최대값으로 조정해주는 식으로 처리하였다. family_size가 child_num 보다 작은 경우가 있고 이 경우는 있기 어려운 경우라 생각해서 고려하지 않아도 될 것 같다.
 
 
 **성능이 좋았던 것으로 나타난 10개**
@@ -86,6 +87,11 @@
 - 정규화를 진행해본다.
 - 나머지 내용은 4와 같음
 > `income_total` 로그화 했을 때 성능 미미하게 향상. minmaxscaling 에 대해서는 다른 값에 대해서는 성능이 떨어지고 `income_total`에 대해서만 성능의 변동이 없었다. 나중에 어떻게 할지 결정해야될듯.
+
+6. 
+- `DAYS_EMPLOYED` ==  365243 -> 0 - bad
+  - `0.7600575656819766` -> `0.7773064081582921`
+> 성능이 떨어졌다.. 왜...?
 
 ### 추가로 진행해볼 것
 - 남은 outlier 처리
@@ -126,6 +132,8 @@
 6. [EDA 과정 중 고민해 볼만한 부분들 공유드립니다 (4/12)](https://dacon.io/competitions/official/235713/codeshare/2514?page=2&dtype=recent)
    - 고용 상태 별 신용 비율
    - 기타 outlier
+
+7. [중복 데이터/ 오류 데이터 관련해서 이야기를 꺼내봅니다.(하르딘)](https://dacon.io/competitions/official/235713/codeshare/2676#)
 
 ### pycaret
 1. [Pycaret logloss baseline (LB 0.75267) Jay 윤](https://dacon.io/competitions/official/235713/codeshare/2477?page=1&dtype=vote)
