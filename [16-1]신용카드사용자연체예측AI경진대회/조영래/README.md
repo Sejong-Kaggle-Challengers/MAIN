@@ -1,5 +1,8 @@
 # [신용카드 사용자 연체 예측 AI 경진대회](https://dacon.io/competitions/official/235713/overview/description)
 
+## 대회 종료 후...
+- [우승자 코드 리뷰](code_review.md)
+
 ## [데이터 변수 설명](https://www.dacon.io/competitions/official/235713/talkboard/402821/)
 - index
 - gender: 성별
@@ -97,12 +100,6 @@
 
 8. `edu_type` credit에 따라 순차적으로 라벨링 - bad
 
-### 추가로 진행해볼 것
-- 남은 outlier 처리
-  - `income_type`의 Student 7개 뿐
-- 의문의 Encoding 관련
-
-
 
 ## 의문
 - 범주형 데이터(edutype 등)를 OnehotEncoding 이 아니라 특정 기준(교육수준)에 따라 OrdinalEncoding 하는 것이 성능이 좋아질까?
@@ -141,7 +138,10 @@
 
 7. [중복 데이터/ 오류 데이터 관련해서 이야기를 꺼내봅니다.(하르딘)](https://dacon.io/competitions/official/235713/codeshare/2676#)
 
-### pycaret
+### automl
 1. [Pycaret logloss baseline (LB 0.75267) Jay 윤](https://dacon.io/competitions/official/235713/codeshare/2477?page=1&dtype=vote)
    - `pycaret`에 대해 한번 사용해볼 겸 공유코드 따라가봄
    - 이외 공식문서를 통한 조금의 추가실습
+
+2. [하이퍼파라미터 튜닝을 쉽고 빠르게 하는 방법](https://dacon.io/competitions/official/235713/codeshare/2704?page=1&dtype=recent)
+   - Kaggle Competition 에서 많이 사용되는 하이퍼파라미터 튜닝 라이브러리 `optuna`
